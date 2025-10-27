@@ -1,0 +1,62 @@
+27/10/2025 22:40:21 [Lieutenant-1] Launching Lieutenant-1 on port 8001
+27/10/2025 22:40:21 [Lieutenant-2] Launching Lieutenant-2 on port 8002
+27/10/2025 22:40:21 [Lieutenant-4] Launching Lieutenant-4 on port 8004
+27/10/2025 22:40:21 [Lieutenant-3] Launching Lieutenant-3 on port 8003
+27/10/2025 22:40:21 [MainProcess] [Node Lieutenant-1] Started on port 8001 (Byzantine: False)
+27/10/2025 22:40:21 [MainProcess] [Node Lieutenant-4] Started on port 8004 (Byzantine: True)
+27/10/2025 22:40:21 [MainProcess] [Node Lieutenant-2] Started on port 8002 (Byzantine: False)
+27/10/2025 22:40:21 [MainProcess] [Node Lieutenant-3] Started on port 8003 (Byzantine: False)
+27/10/2025 22:40:23 [Commander] Launching Commander
+27/10/2025 22:40:23 [MainProcess] Commander initiating order: ATTACK
+27/10/2025 22:40:23 [MainProcess] [Node Lieutenant-1] Received 'ATTACK' from Commander
+27/10/2025 22:40:23 [MainProcess] Sent 'ATTACK' to Lieutenant-1
+27/10/2025 22:40:23 [MainProcess] [Node Lieutenant-2] Received 'ATTACK' from Commander
+27/10/2025 22:40:23 [MainProcess] Sent 'ATTACK' to Lieutenant-2
+27/10/2025 22:40:23 [MainProcess] [Node Lieutenant-3] Received 'ATTACK' from Commander
+27/10/2025 22:40:23 [MainProcess] Sent 'ATTACK' to Lieutenant-3
+27/10/2025 22:40:23 [MainProcess] [Node Lieutenant-4] Received 'ATTACK' from Commander
+27/10/2025 22:40:23 [MainProcess] [Node Lieutenant-4] Byzantine behavior: flipped to 'RETREAT'
+27/10/2025 22:40:23 [MainProcess] Sent 'ATTACK' to Lieutenant-4
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-2] Received 'ATTACK' from Lieutenant-1
+27/10/2025 22:40:24 [MainProcess] Lieutenant-1 forwarded 'ATTACK' to Lieutenant-2
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-3] Received 'ATTACK' from Lieutenant-1
+27/10/2025 22:40:24 [MainProcess] Lieutenant-1 forwarded 'ATTACK' to Lieutenant-3
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-4] Received 'ATTACK' from Lieutenant-1
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-4] Byzantine behavior: flipped to 'RETREAT'
+27/10/2025 22:40:24 [MainProcess] Lieutenant-1 forwarded 'ATTACK' to Lieutenant-4
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-1] Received 'ATTACK' from Lieutenant-2
+27/10/2025 22:40:24 [MainProcess] Lieutenant-2 forwarded 'ATTACK' to Lieutenant-1
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-3] Received 'ATTACK' from Lieutenant-2
+27/10/2025 22:40:24 [MainProcess] Lieutenant-2 forwarded 'ATTACK' to Lieutenant-3
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-4] Received 'ATTACK' from Lieutenant-2
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-4] Byzantine behavior: flipped to 'RETREAT'
+27/10/2025 22:40:24 [MainProcess] Lieutenant-2 forwarded 'ATTACK' to Lieutenant-4
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-1] Received 'ATTACK' from Lieutenant-3
+27/10/2025 22:40:24 [MainProcess] Lieutenant-3 forwarded 'ATTACK' to Lieutenant-1
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-2] Received 'ATTACK' from Lieutenant-3
+27/10/2025 22:40:24 [MainProcess] Lieutenant-3 forwarded 'ATTACK' to Lieutenant-2
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-4] Received 'ATTACK' from Lieutenant-3
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-4] Byzantine behavior: flipped to 'RETREAT'
+27/10/2025 22:40:24 [MainProcess] Lieutenant-3 forwarded 'ATTACK' to Lieutenant-4
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-1] Received 'RETREAT' from Lieutenant-4
+27/10/2025 22:40:24 [MainProcess] Lieutenant-4 forwarded 'RETREAT' to Lieutenant-1
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-2] Received 'RETREAT' from Lieutenant-4
+27/10/2025 22:40:24 [MainProcess] Lieutenant-4 forwarded 'RETREAT' to Lieutenant-2
+27/10/2025 22:40:24 [MainProcess] [Node Lieutenant-3] Received 'RETREAT' from Lieutenant-4
+27/10/2025 22:40:24 [MainProcess] Lieutenant-4 forwarded 'RETREAT' to Lieutenant-3
+27/10/2025 22:40:25 [MainProcess] [Node Lieutenant-1] Final decision: ATTACK
+27/10/2025 22:40:25 [MainProcess] [Node Lieutenant-2] Final decision: ATTACK
+27/10/2025 22:40:25 [MainProcess] [Node Lieutenant-3] Final decision: ATTACK
+27/10/2025 22:40:25 [MainProcess] [Node Lieutenant-4] Final decision: RETREAT
+27/10/2025 22:40:25 [MainProcess] 
+=== BYZANTINE AGREEMENT FINAL RESULT ===
+27/10/2025 22:40:25 [MainProcess] Individual decisions: {'Lieutenant-1': 'ATTACK', 'Lieutenant-2': 'ATTACK', 'Lieutenant-3': 'ATTACK', 'Lieutenant-4': 'RETREAT'}
+27/10/2025 22:40:25 [MainProcess] Vote count: {'ATTACK': 3, 'RETREAT': 1}
+27/10/2025 22:40:25 [MainProcess] Majority decision: ATTACK (3/4 nodes)
+27/10/2025 22:40:25 [MainProcess] Consensus achieved: YES
+27/10/2025 22:40:25 [MainProcess] ==========================================
+27/10/2025 22:40:25 [MainProcess] [Node Lieutenant-1] Shutting down...
+27/10/2025 22:40:25 [MainProcess] [Node Lieutenant-2] Shutting down...
+27/10/2025 22:40:25 [MainProcess] [Node Lieutenant-3] Shutting down...
+27/10/2025 22:40:25 [MainProcess] [Node Lieutenant-4] Shutting down...
+27/10/2025 22:40:25 [MainProcess] Simulation complete.

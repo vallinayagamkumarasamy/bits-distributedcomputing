@@ -1,0 +1,602 @@
+27/10/2025 22:35:32 [MainProcess] [Node-1] Initialized
+27/10/2025 22:35:32 [MainProcess] [Node-1] Started on port 8001
+27/10/2025 22:35:32 [MainProcess] [Node-2] Initialized
+27/10/2025 22:35:32 [MainProcess] [Node-2] Started on port 8002
+27/10/2025 22:35:33 [MainProcess] [Node-3] Initialized
+27/10/2025 22:35:33 [MainProcess] [Node-3] Started on port 8003
+27/10/2025 22:35:33 [MainProcess] [Node-4] Initialized
+27/10/2025 22:35:33 [MainProcess] [Node-4] Started on port 8004
+27/10/2025 22:35:33 [MainProcess] [Node-5] Initialized
+27/10/2025 22:35:33 [MainProcess] [Node-5] Started on port 8005
+27/10/2025 22:35:34 [MainProcess] [Node-6] Initialized
+27/10/2025 22:35:34 [MainProcess] [Node-6] Started on port 8006
+27/10/2025 22:35:34 [MainProcess] [Node-7] Initialized
+27/10/2025 22:35:34 [MainProcess] [Node-7] Started on port 8007
+27/10/2025 22:35:36 [MainProcess] Waiting for all nodes to start...
+27/10/2025 22:35:36 [MainProcess] Node-1 is ready
+27/10/2025 22:35:36 [MainProcess] Node-2 is ready
+27/10/2025 22:35:36 [MainProcess] Node-3 is ready
+27/10/2025 22:35:36 [MainProcess] Node-4 is ready
+27/10/2025 22:35:36 [MainProcess] Node-5 is ready
+27/10/2025 22:35:36 [MainProcess] Node-6 is ready
+27/10/2025 22:35:36 [MainProcess] Node-7 is ready
+27/10/2025 22:35:37 [MainProcess] [Node-3] Starting CS cycle
+27/10/2025 22:35:37 [MainProcess] [Node-3] Queue: [(1,3)]
+27/10/2025 22:35:37 [MainProcess] [Node-3] Sending REQUEST to Node-1 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-3] Sending REQUEST to Node-2 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-3] Sending REQUEST to Node-4 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-3] Sending REQUEST to Node-5 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-3] Sending REQUEST to Node-6 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-3] Sending REQUEST to Node-7 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-3] >>> REQUESTING Critical Section with TS:1
+27/10/2025 22:35:37 [MainProcess] All nodes are ready!
+27/10/2025 22:35:37 [MainProcess] 
+=== Waiting for CS execution to complete ===
+27/10/2025 22:35:37 [MainProcess] [Node-1] Received REQUEST from Node-3 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-1] Sending REPLY to Node-3 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-2] Received REQUEST from Node-3 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-2] Sending REPLY to Node-3 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-3] Waiting for CS entry conditions...
+27/10/2025 22:35:37 [MainProcess] [Node-4] Received REQUEST from Node-3 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-6] Received REQUEST from Node-3 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-4] Sending REPLY to Node-3 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-6] Sending REPLY to Node-3 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-5] Received REQUEST from Node-3 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-5] Sending REPLY to Node-3 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-7] Received REQUEST from Node-3 with TS:1
+27/10/2025 22:35:37 [MainProcess] [Node-7] Sending REPLY to Node-3 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-3] ✓ Received REPLY from Node-1 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-3] Total replies: 1/6
+27/10/2025 22:35:37 [MainProcess] [Node-3] ✓ Received REPLY from Node-2 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-3] Total replies: 2/6
+27/10/2025 22:35:37 [MainProcess] [Node-3] ✓ Received REPLY from Node-4 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-3] Total replies: 3/6
+27/10/2025 22:35:37 [MainProcess] [Node-3] ✓ Received REPLY from Node-6 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-3] Total replies: 4/6
+27/10/2025 22:35:37 [MainProcess] [Node-3] ✓ Received REPLY from Node-5 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-3] ✓ Received REPLY from Node-7 with TS:3
+27/10/2025 22:35:37 [MainProcess] [Node-3] Total replies: 5/6
+27/10/2025 22:35:37 [MainProcess] [Node-3] Total replies: 6/6
+27/10/2025 22:35:37 [MainProcess] [Node-3] ✓✓✓ All conditions met! Entering CS...
+27/10/2025 22:35:37 [MainProcess] 
+27/10/2025 22:35:37 [MainProcess] [Node-3] ========== ENTERING CRITICAL SECTION ==========
+27/10/2025 22:35:37 [MainProcess] [Node-3] Entry Time: 22:35:37.413 | Lamport TS: 16
+27/10/2025 22:35:37 [MainProcess] [Node-1] Starting CS cycle
+27/10/2025 22:35:37 [MainProcess] [Node-1] Queue: [(1,3), (4,1)]
+27/10/2025 22:35:37 [MainProcess] [Node-1] Sending REQUEST to Node-2 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-1] Sending REQUEST to Node-3 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-1] Sending REQUEST to Node-4 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-1] Sending REQUEST to Node-5 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-1] Sending REQUEST to Node-6 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-2] Received REQUEST from Node-1 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-2] Sending REPLY to Node-1 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-1] Sending REQUEST to Node-7 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-3] Received REQUEST from Node-1 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-3] Sending REPLY to Node-1 with TS:21
+27/10/2025 22:35:37 [MainProcess] [Node-1] >>> REQUESTING Critical Section with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-4] Received REQUEST from Node-1 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-4] Sending REPLY to Node-1 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-5] Received REQUEST from Node-1 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-5] Sending REPLY to Node-1 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-1] Waiting for CS entry conditions...
+27/10/2025 22:35:37 [MainProcess] [Node-1] ✓ Received REPLY from Node-3 with TS:21
+27/10/2025 22:35:37 [MainProcess] [Node-7] Received REQUEST from Node-1 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-1] ✓ Received REPLY from Node-2 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-7] Sending REPLY to Node-1 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-1] Total replies: 1/6
+27/10/2025 22:35:37 [MainProcess] [Node-6] Received REQUEST from Node-1 with TS:4
+27/10/2025 22:35:37 [MainProcess] [Node-6] Sending REPLY to Node-1 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-1] ✓ Received REPLY from Node-4 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-1] Total replies: 2/6
+27/10/2025 22:35:37 [MainProcess] [Node-1] ✓ Received REPLY from Node-5 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-1] ✓ Received REPLY from Node-7 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-1] Total replies: 3/6
+27/10/2025 22:35:37 [MainProcess] [Node-1] ✓ Received REPLY from Node-6 with TS:6
+27/10/2025 22:35:37 [MainProcess] [Node-1] Total replies: 4/6
+27/10/2025 22:35:37 [MainProcess] [Node-1] Total replies: 5/6
+27/10/2025 22:35:37 [MainProcess] [Node-1] Total replies: 6/6
+27/10/2025 22:35:38 [MainProcess] [Node-3] Working in CS - Start TS: 17
+27/10/2025 22:35:38 [MainProcess] [Node-3]   Operation 1: +300 = 300 [TS:18]
+27/10/2025 22:35:38 [MainProcess] [Node-3]   Operation 2: +310 = 610 [TS:19]
+27/10/2025 22:35:38 [MainProcess] [Node-3]   Operation 3: +320 = 930 [TS:22]
+27/10/2025 22:35:38 [MainProcess] [Node-3] Work Complete - Final Result: 930 [TS:23]
+27/10/2025 22:35:38 [MainProcess] [Node-3] Exit Time: 22:35:38.319 | Lamport TS: 24
+27/10/2025 22:35:38 [MainProcess] [Node-3] ========== EXITING CRITICAL SECTION ==========
+27/10/2025 22:35:38 [MainProcess] 
+27/10/2025 22:35:38 [MainProcess] [Node-3] Sending RELEASE to Node-1
+27/10/2025 22:35:38 [MainProcess] [Node-3] Sending RELEASE to Node-2
+27/10/2025 22:35:38 [MainProcess] [Node-3] Sending RELEASE to Node-4
+27/10/2025 22:35:38 [MainProcess] [Node-1] Received RELEASE from Node-3 with TS:25
+27/10/2025 22:35:38 [MainProcess] [Node-2] Received RELEASE from Node-3 with TS:26
+27/10/2025 22:35:38 [MainProcess] [Node-3] Sending RELEASE to Node-5
+27/10/2025 22:35:38 [MainProcess] [Node-4] Received RELEASE from Node-3 with TS:27
+27/10/2025 22:35:38 [MainProcess] [Node-3] Sending RELEASE to Node-6
+27/10/2025 22:35:38 [MainProcess] [Node-3] Sending RELEASE to Node-7
+27/10/2025 22:35:38 [MainProcess] [Node-3] CS cycle completed
+27/10/2025 22:35:38 [MainProcess] [Node-6] Received RELEASE from Node-3 with TS:37
+27/10/2025 22:35:38 [MainProcess] [Node-5] Received RELEASE from Node-3 with TS:35
+27/10/2025 22:35:38 [MainProcess] [Node-7] Received RELEASE from Node-3 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-1] ✓✓✓ All conditions met! Entering CS...
+27/10/2025 22:35:38 [MainProcess] 
+27/10/2025 22:35:38 [MainProcess] [Node-1] ========== ENTERING CRITICAL SECTION ==========
+27/10/2025 22:35:38 [MainProcess] [Node-1] Entry Time: 22:35:38.329 | Lamport TS: 34
+27/10/2025 22:35:38 [MainProcess] [Node-6] Starting CS cycle
+27/10/2025 22:35:38 [MainProcess] [Node-6] Queue: [(4,1), (39,6)]
+27/10/2025 22:35:38 [MainProcess] [Node-6] Sending REQUEST to Node-1 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-6] Sending REQUEST to Node-2 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-1] Received REQUEST from Node-6 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-1] Sending REPLY to Node-6 with TS:41
+27/10/2025 22:35:38 [MainProcess] [Node-6] Sending REQUEST to Node-3 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-2] Received REQUEST from Node-6 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-6] Sending REQUEST to Node-4 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-2] Sending REPLY to Node-6 with TS:41
+27/10/2025 22:35:38 [MainProcess] [Node-6] Sending REQUEST to Node-5 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-6] ✓ Received REPLY from Node-2 with TS:41
+27/10/2025 22:35:38 [MainProcess] [Node-6] Sending REQUEST to Node-7 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-6] >>> REQUESTING Critical Section with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-4] Received REQUEST from Node-6 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-4] Sending REPLY to Node-6 with TS:41
+27/10/2025 22:35:38 [MainProcess] [Node-6] Total replies: 1/6
+27/10/2025 22:35:38 [MainProcess] [Node-3] Received REQUEST from Node-6 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-6] ✓ Received REPLY from Node-1 with TS:41
+27/10/2025 22:35:38 [MainProcess] [Node-3] Sending REPLY to Node-6 with TS:44
+27/10/2025 22:35:38 [MainProcess] [Node-5] Received REQUEST from Node-6 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-5] Sending REPLY to Node-6 with TS:41
+27/10/2025 22:35:38 [MainProcess] [Node-6] Waiting for CS entry conditions...
+27/10/2025 22:35:38 [MainProcess] [Node-6] ✓ Received REPLY from Node-4 with TS:41
+27/10/2025 22:35:38 [MainProcess] [Node-6] Total replies: 2/6
+27/10/2025 22:35:38 [MainProcess] [Node-7] Received REQUEST from Node-6 with TS:39
+27/10/2025 22:35:38 [MainProcess] [Node-7] Sending REPLY to Node-6 with TS:42
+27/10/2025 22:35:38 [MainProcess] [Node-6] ✓ Received REPLY from Node-5 with TS:41
+27/10/2025 22:35:38 [MainProcess] [Node-6] Total replies: 3/6
+27/10/2025 22:35:38 [MainProcess] [Node-6] ✓ Received REPLY from Node-3 with TS:44
+27/10/2025 22:35:38 [MainProcess] [Node-6] ✓ Received REPLY from Node-7 with TS:42
+27/10/2025 22:35:38 [MainProcess] [Node-6] Total replies: 4/6
+27/10/2025 22:35:38 [MainProcess] [Node-6] Total replies: 5/6
+27/10/2025 22:35:38 [MainProcess] [Node-6] Total replies: 6/6
+27/10/2025 22:35:39 [MainProcess] [Node-2] Starting CS cycle
+27/10/2025 22:35:39 [MainProcess] [Node-2] Queue: [(4,1), (39,6), (42,2)]
+27/10/2025 22:35:39 [MainProcess] [Node-2] Sending REQUEST to Node-1 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-2] Sending REQUEST to Node-3 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-2] Sending REQUEST to Node-4 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-1] Received REQUEST from Node-2 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-2] Sending REQUEST to Node-5 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-1] Sending REPLY to Node-2 with TS:44
+27/10/2025 22:35:39 [MainProcess] [Node-2] Sending REQUEST to Node-6 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-2] Sending REQUEST to Node-7 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-2] >>> REQUESTING Critical Section with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-3] Received REQUEST from Node-2 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-3] Sending REPLY to Node-2 with TS:46
+27/10/2025 22:35:39 [MainProcess] [Node-2] ✓ Received REPLY from Node-1 with TS:44
+27/10/2025 22:35:39 [MainProcess] [Node-4] Received REQUEST from Node-2 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-4] Sending REPLY to Node-2 with TS:44
+27/10/2025 22:35:39 [MainProcess] [Node-5] Received REQUEST from Node-2 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-5] Sending REPLY to Node-2 with TS:44
+27/10/2025 22:35:39 [MainProcess] [Node-2] ✓ Received REPLY from Node-3 with TS:46
+27/10/2025 22:35:39 [MainProcess] [Node-2] Waiting for CS entry conditions...
+27/10/2025 22:35:39 [MainProcess] [Node-2] Total replies: 1/6
+27/10/2025 22:35:39 [MainProcess] [Node-6] Received REQUEST from Node-2 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-6] Sending REPLY to Node-2 with TS:55
+27/10/2025 22:35:39 [MainProcess] [Node-7] Received REQUEST from Node-2 with TS:42
+27/10/2025 22:35:39 [MainProcess] [Node-7] Sending REPLY to Node-2 with TS:44
+27/10/2025 22:35:39 [MainProcess] [Node-2] ✓ Received REPLY from Node-4 with TS:44
+27/10/2025 22:35:39 [MainProcess] [Node-2] Total replies: 2/6
+27/10/2025 22:35:39 [MainProcess] [Node-2] ✓ Received REPLY from Node-5 with TS:44
+27/10/2025 22:35:39 [MainProcess] [Node-2] ✓ Received REPLY from Node-6 with TS:55
+27/10/2025 22:35:39 [MainProcess] [Node-2] Total replies: 3/6
+27/10/2025 22:35:39 [MainProcess] [Node-2] ✓ Received REPLY from Node-7 with TS:44
+27/10/2025 22:35:39 [MainProcess] [Node-2] Total replies: 4/6
+27/10/2025 22:35:39 [MainProcess] [Node-2] Total replies: 5/6
+27/10/2025 22:35:39 [MainProcess] [Node-2] Total replies: 6/6
+27/10/2025 22:35:39 [MainProcess] [Node-4] Starting CS cycle
+27/10/2025 22:35:39 [MainProcess] [Node-4] Queue: [(4,1), (39,6), (42,2), (45,4)]
+27/10/2025 22:35:39 [MainProcess] [Node-4] Sending REQUEST to Node-1 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-4] Sending REQUEST to Node-2 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-4] Sending REQUEST to Node-3 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-4] Sending REQUEST to Node-5 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-4] Sending REQUEST to Node-6 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-4] Sending REQUEST to Node-7 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-4] >>> REQUESTING Critical Section with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-1] Received REQUEST from Node-4 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-1] Sending REPLY to Node-4 with TS:47
+27/10/2025 22:35:39 [MainProcess] [Node-2] Received REQUEST from Node-4 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-2] Sending REPLY to Node-4 with TS:62
+27/10/2025 22:35:39 [MainProcess] [Node-3] Received REQUEST from Node-4 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-3] Sending REPLY to Node-4 with TS:48
+27/10/2025 22:35:39 [MainProcess] [Node-4] ✓ Received REPLY from Node-1 with TS:47
+27/10/2025 22:35:39 [MainProcess] [Node-5] Received REQUEST from Node-4 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-5] Sending REPLY to Node-4 with TS:47
+27/10/2025 22:35:39 [MainProcess] [Node-4] Waiting for CS entry conditions...
+27/10/2025 22:35:39 [MainProcess] [Node-6] Received REQUEST from Node-4 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-6] Sending REPLY to Node-4 with TS:57
+27/10/2025 22:35:39 [MainProcess] [Node-4] ✓ Received REPLY from Node-3 with TS:48
+27/10/2025 22:35:39 [MainProcess] [Node-4] Total replies: 1/6
+27/10/2025 22:35:39 [MainProcess] [Node-4] ✓ Received REPLY from Node-2 with TS:62
+27/10/2025 22:35:39 [MainProcess] [Node-7] Received REQUEST from Node-4 with TS:45
+27/10/2025 22:35:39 [MainProcess] [Node-7] Sending REPLY to Node-4 with TS:47
+27/10/2025 22:35:39 [MainProcess] [Node-4] ✓ Received REPLY from Node-5 with TS:47
+27/10/2025 22:35:39 [MainProcess] [Node-4] Total replies: 2/6
+27/10/2025 22:35:39 [MainProcess] [Node-4] ✓ Received REPLY from Node-6 with TS:57
+27/10/2025 22:35:39 [MainProcess] [Node-4] Total replies: 3/6
+27/10/2025 22:35:39 [MainProcess] [Node-4] Total replies: 4/6
+27/10/2025 22:35:39 [MainProcess] [Node-4] ✓ Received REPLY from Node-7 with TS:47
+27/10/2025 22:35:39 [MainProcess] [Node-4] Total replies: 5/6
+27/10/2025 22:35:39 [MainProcess] [Node-4] Total replies: 6/6
+27/10/2025 22:35:39 [MainProcess] [Node-1] Working in CS - Start TS: 35
+27/10/2025 22:35:39 [MainProcess] [Node-1]   Operation 1: +100 = 100 [TS:36]
+27/10/2025 22:35:39 [MainProcess] [Node-1]   Operation 2: +110 = 210 [TS:37]
+27/10/2025 22:35:39 [MainProcess] [Node-1]   Operation 3: +120 = 330 [TS:42]
+27/10/2025 22:35:39 [MainProcess] [Node-1] Work Complete - Final Result: 330 [TS:48]
+27/10/2025 22:35:39 [MainProcess] [Node-1] Exit Time: 22:35:39.231 | Lamport TS: 49
+27/10/2025 22:35:39 [MainProcess] [Node-1] ========== EXITING CRITICAL SECTION ==========
+27/10/2025 22:35:39 [MainProcess] 
+27/10/2025 22:35:39 [MainProcess] [Node-1] Sending RELEASE to Node-2
+27/10/2025 22:35:39 [MainProcess] [Node-1] Sending RELEASE to Node-3
+27/10/2025 22:35:39 [MainProcess] [Node-1] Sending RELEASE to Node-4
+27/10/2025 22:35:39 [MainProcess] [Node-1] Sending RELEASE to Node-5
+27/10/2025 22:35:39 [MainProcess] [Node-1] Sending RELEASE to Node-6
+27/10/2025 22:35:39 [MainProcess] [Node-2] Received RELEASE from Node-1 with TS:50
+27/10/2025 22:35:39 [MainProcess] [Node-1] Sending RELEASE to Node-7
+27/10/2025 22:35:39 [MainProcess] [Node-1] CS cycle completed
+27/10/2025 22:35:39 [MainProcess] [Node-3] Received RELEASE from Node-1 with TS:51
+27/10/2025 22:35:39 [MainProcess] [Node-4] Received RELEASE from Node-1 with TS:52
+27/10/2025 22:35:39 [MainProcess] [Node-5] Received RELEASE from Node-1 with TS:53
+27/10/2025 22:35:39 [MainProcess] [Node-6] Received RELEASE from Node-1 with TS:54
+27/10/2025 22:35:39 [MainProcess] [Node-7] Received RELEASE from Node-1 with TS:55
+27/10/2025 22:35:39 [MainProcess] [Node-6] ✓✓✓ All conditions met! Entering CS...
+27/10/2025 22:35:39 [MainProcess] 
+27/10/2025 22:35:39 [MainProcess] [Node-6] ========== ENTERING CRITICAL SECTION ==========
+27/10/2025 22:35:39 [MainProcess] [Node-6] Entry Time: 22:35:39.317 | Lamport TS: 59
+27/10/2025 22:35:39 [MainProcess] [Node-2] Checking: Replies=6/6, At_head=False, Queue=(39,6), (42,2), (45,4)
+27/10/2025 22:35:40 [MainProcess] [Node-4] Checking: Replies=6/6, At_head=False, Queue=(39,6), (42,2), (45,4)
+27/10/2025 22:35:40 [MainProcess] [Node-6] Working in CS - Start TS: 60
+27/10/2025 22:35:40 [MainProcess] [Node-6]   Operation 1: +600 = 600 [TS:61]
+27/10/2025 22:35:40 [MainProcess] [Node-6]   Operation 2: +610 = 1210 [TS:62]
+27/10/2025 22:35:40 [MainProcess] [Node-6]   Operation 3: +620 = 1830 [TS:63]
+27/10/2025 22:35:40 [MainProcess] [Node-6] Work Complete - Final Result: 1830 [TS:64]
+27/10/2025 22:35:40 [MainProcess] [Node-6] Exit Time: 22:35:40.286 | Lamport TS: 65
+27/10/2025 22:35:40 [MainProcess] [Node-6] ========== EXITING CRITICAL SECTION ==========
+27/10/2025 22:35:40 [MainProcess] 
+27/10/2025 22:35:40 [MainProcess] [Node-6] Sending RELEASE to Node-1
+27/10/2025 22:35:40 [MainProcess] [Node-6] Sending RELEASE to Node-2
+27/10/2025 22:35:40 [MainProcess] [Node-6] Sending RELEASE to Node-3
+27/10/2025 22:35:40 [MainProcess] [Node-6] Sending RELEASE to Node-4
+27/10/2025 22:35:40 [MainProcess] [Node-6] Sending RELEASE to Node-5
+27/10/2025 22:35:40 [MainProcess] [Node-1] Received RELEASE from Node-6 with TS:66
+27/10/2025 22:35:40 [MainProcess] [Node-2] Received RELEASE from Node-6 with TS:67
+27/10/2025 22:35:40 [MainProcess] [Node-3] Received RELEASE from Node-6 with TS:68
+27/10/2025 22:35:40 [MainProcess] [Node-6] Sending RELEASE to Node-7
+27/10/2025 22:35:40 [MainProcess] [Node-4] Received RELEASE from Node-6 with TS:69
+27/10/2025 22:35:40 [MainProcess] [Node-6] CS cycle completed
+27/10/2025 22:35:40 [MainProcess] [Node-5] Received RELEASE from Node-6 with TS:70
+27/10/2025 22:35:40 [MainProcess] [Node-7] Received RELEASE from Node-6 with TS:80
+27/10/2025 22:35:40 [MainProcess] [Node-7] Starting CS cycle
+27/10/2025 22:35:40 [MainProcess] [Node-7] Queue: [(42,2), (45,4), (82,7)]
+27/10/2025 22:35:40 [MainProcess] [Node-7] Sending REQUEST to Node-1 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-7] Sending REQUEST to Node-2 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-7] Sending REQUEST to Node-3 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-1] Received REQUEST from Node-7 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-1] Sending REPLY to Node-7 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-7] Sending REQUEST to Node-4 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-2] Received REQUEST from Node-7 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-2] Sending REPLY to Node-7 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-7] Sending REQUEST to Node-5 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-7] Sending REQUEST to Node-6 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-7] >>> REQUESTING Critical Section with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-2] ✓✓✓ All conditions met! Entering CS...
+27/10/2025 22:35:40 [MainProcess] 
+27/10/2025 22:35:40 [MainProcess] [Node-7] ✓ Received REPLY from Node-1 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-2] ========== ENTERING CRITICAL SECTION ==========
+27/10/2025 22:35:40 [MainProcess] [Node-2] Entry Time: 22:35:40.382 | Lamport TS: 85
+27/10/2025 22:35:40 [MainProcess] [Node-7] ✓ Received REPLY from Node-2 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-4] Received REQUEST from Node-7 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-4] Sending REPLY to Node-7 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-3] Received REQUEST from Node-7 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-5] Received REQUEST from Node-7 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-7] Waiting for CS entry conditions...
+27/10/2025 22:35:40 [MainProcess] [Node-3] Sending REPLY to Node-7 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-7] Total replies: 1/6
+27/10/2025 22:35:40 [MainProcess] [Node-5] Sending REPLY to Node-7 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-7] Total replies: 2/6
+27/10/2025 22:35:40 [MainProcess] [Node-6] Received REQUEST from Node-7 with TS:82
+27/10/2025 22:35:40 [MainProcess] [Node-6] Sending REPLY to Node-7 with TS:87
+27/10/2025 22:35:40 [MainProcess] [Node-7] ✓ Received REPLY from Node-4 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-7] ✓ Received REPLY from Node-3 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-7] ✓ Received REPLY from Node-5 with TS:84
+27/10/2025 22:35:40 [MainProcess] [Node-7] Total replies: 3/6
+27/10/2025 22:35:40 [MainProcess] [Node-7] Total replies: 4/6
+27/10/2025 22:35:40 [MainProcess] [Node-7] ✓ Received REPLY from Node-6 with TS:87
+27/10/2025 22:35:40 [MainProcess] [Node-7] Total replies: 5/6
+27/10/2025 22:35:40 [MainProcess] [Node-7] Total replies: 6/6
+27/10/2025 22:35:40 [MainProcess] [Node-5] Starting CS cycle
+27/10/2025 22:35:40 [MainProcess] [Node-5] Queue: [(42,2), (45,4), (82,7), (85,5)]
+27/10/2025 22:35:40 [MainProcess] [Node-5] Sending REQUEST to Node-1 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-5] Sending REQUEST to Node-2 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-5] Sending REQUEST to Node-3 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-5] Sending REQUEST to Node-4 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-5] Sending REQUEST to Node-6 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-1] Received REQUEST from Node-5 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-1] Sending REPLY to Node-5 with TS:87
+27/10/2025 22:35:40 [MainProcess] [Node-5] Sending REQUEST to Node-7 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-2] Received REQUEST from Node-5 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-2] Sending REPLY to Node-5 with TS:89
+27/10/2025 22:35:40 [MainProcess] [Node-5] >>> REQUESTING Critical Section with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-3] Received REQUEST from Node-5 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-3] Sending REPLY to Node-5 with TS:87
+27/10/2025 22:35:40 [MainProcess] [Node-5] ✓ Received REPLY from Node-1 with TS:87
+27/10/2025 22:35:40 [MainProcess] [Node-5] ✓ Received REPLY from Node-2 with TS:89
+27/10/2025 22:35:40 [MainProcess] [Node-5] Waiting for CS entry conditions...
+27/10/2025 22:35:40 [MainProcess] [Node-4] Received REQUEST from Node-5 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-4] Sending REPLY to Node-5 with TS:87
+27/10/2025 22:35:40 [MainProcess] [Node-6] Received REQUEST from Node-5 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-5] ✓ Received REPLY from Node-3 with TS:87
+27/10/2025 22:35:40 [MainProcess] [Node-6] Sending REPLY to Node-5 with TS:89
+27/10/2025 22:35:40 [MainProcess] [Node-5] Total replies: 1/6
+27/10/2025 22:35:40 [MainProcess] [Node-5] ✓ Received REPLY from Node-4 with TS:87
+27/10/2025 22:35:40 [MainProcess] [Node-7] Received REQUEST from Node-5 with TS:85
+27/10/2025 22:35:40 [MainProcess] [Node-7] Sending REPLY to Node-5 with TS:98
+27/10/2025 22:35:40 [MainProcess] [Node-5] Total replies: 2/6
+27/10/2025 22:35:40 [MainProcess] [Node-5] ✓ Received REPLY from Node-6 with TS:89
+27/10/2025 22:35:40 [MainProcess] [Node-5] ✓ Received REPLY from Node-7 with TS:98
+27/10/2025 22:35:40 [MainProcess] [Node-5] Total replies: 3/6
+27/10/2025 22:35:40 [MainProcess] [Node-5] Total replies: 4/6
+27/10/2025 22:35:40 [MainProcess] [Node-5] Total replies: 5/6
+27/10/2025 22:35:40 [MainProcess] [Node-5] Total replies: 6/6
+27/10/2025 22:35:41 [MainProcess] [Node-4] Checking: Replies=6/6, At_head=False, Queue=(42,2), (45,4), (82,7)
+27/10/2025 22:35:41 [MainProcess] [Node-2] Working in CS - Start TS: 86
+27/10/2025 22:35:41 [MainProcess] [Node-2]   Operation 1: +200 = 200 [TS:87]
+27/10/2025 22:35:41 [MainProcess] [Node-2]   Operation 2: +210 = 410 [TS:90]
+27/10/2025 22:35:41 [MainProcess] [Node-2]   Operation 3: +220 = 630 [TS:91]
+27/10/2025 22:35:41 [MainProcess] [Node-2] Work Complete - Final Result: 630 [TS:92]
+27/10/2025 22:35:41 [MainProcess] [Node-2] Exit Time: 22:35:41.285 | Lamport TS: 93
+27/10/2025 22:35:41 [MainProcess] [Node-2] ========== EXITING CRITICAL SECTION ==========
+27/10/2025 22:35:41 [MainProcess] 
+27/10/2025 22:35:41 [MainProcess] [Node-2] Sending RELEASE to Node-1
+27/10/2025 22:35:41 [MainProcess] [Node-2] Sending RELEASE to Node-3
+27/10/2025 22:35:41 [MainProcess] [Node-2] Sending RELEASE to Node-4
+27/10/2025 22:35:41 [MainProcess] [Node-2] Sending RELEASE to Node-5
+27/10/2025 22:35:41 [MainProcess] [Node-3] Received RELEASE from Node-2 with TS:95
+27/10/2025 22:35:41 [MainProcess] [Node-1] Received RELEASE from Node-2 with TS:94
+27/10/2025 22:35:41 [MainProcess] [Node-2] Sending RELEASE to Node-6
+27/10/2025 22:35:41 [MainProcess] [Node-7] Checking: Replies=6/6, At_head=False, Queue=(42,2), (45,4), (82,7)
+27/10/2025 22:35:41 [MainProcess] [Node-2] Sending RELEASE to Node-7
+27/10/2025 22:35:41 [MainProcess] [Node-2] CS cycle completed
+27/10/2025 22:35:41 [MainProcess] [Node-5] Received RELEASE from Node-2 with TS:97
+27/10/2025 22:35:41 [MainProcess] [Node-4] Received RELEASE from Node-2 with TS:96
+27/10/2025 22:35:41 [MainProcess] [Node-6] Received RELEASE from Node-2 with TS:98
+27/10/2025 22:35:41 [MainProcess] [Node-7] Received RELEASE from Node-2 with TS:99
+27/10/2025 22:35:41 [MainProcess] [Node-4] ✓✓✓ All conditions met! Entering CS...
+27/10/2025 22:35:41 [MainProcess] 
+27/10/2025 22:35:41 [MainProcess] [Node-4] ========== ENTERING CRITICAL SECTION ==========
+27/10/2025 22:35:41 [MainProcess] [Node-4] Entry Time: 22:35:41.294 | Lamport TS: 98
+27/10/2025 22:35:41 [MainProcess] [Node-5] Checking: Replies=6/6, At_head=False, Queue=(45,4), (82,7), (85,5)
+27/10/2025 22:35:42 [MainProcess] [Node-4] Working in CS - Start TS: 99
+27/10/2025 22:35:42 [MainProcess] [Node-4]   Operation 1: +400 = 400 [TS:100]
+27/10/2025 22:35:42 [MainProcess] [Node-4]   Operation 2: +410 = 810 [TS:101]
+27/10/2025 22:35:42 [MainProcess] [Node-4]   Operation 3: +420 = 1230 [TS:102]
+27/10/2025 22:35:42 [MainProcess] [Node-4] Work Complete - Final Result: 1230 [TS:103]
+27/10/2025 22:35:42 [MainProcess] [Node-4] Exit Time: 22:35:42.202 | Lamport TS: 104
+27/10/2025 22:35:42 [MainProcess] [Node-4] ========== EXITING CRITICAL SECTION ==========
+27/10/2025 22:35:42 [MainProcess] 
+27/10/2025 22:35:42 [MainProcess] [Node-4] Sending RELEASE to Node-1
+27/10/2025 22:35:42 [MainProcess] [Node-4] Sending RELEASE to Node-2
+27/10/2025 22:35:42 [MainProcess] [Node-4] Sending RELEASE to Node-3
+27/10/2025 22:35:42 [MainProcess] [Node-1] Received RELEASE from Node-4 with TS:105
+27/10/2025 22:35:42 [MainProcess] [Node-4] Sending RELEASE to Node-5
+27/10/2025 22:35:42 [MainProcess] [Node-4] Sending RELEASE to Node-6
+27/10/2025 22:35:42 [MainProcess] [Node-4] Sending RELEASE to Node-7
+27/10/2025 22:35:42 [MainProcess] [Node-4] CS cycle completed
+27/10/2025 22:35:42 [MainProcess] [Node-2] Received RELEASE from Node-4 with TS:106
+27/10/2025 22:35:42 [MainProcess] [Node-3] Received RELEASE from Node-4 with TS:107
+27/10/2025 22:35:42 [MainProcess] [Node-6] Received RELEASE from Node-4 with TS:109
+27/10/2025 22:35:42 [MainProcess] [Node-5] Received RELEASE from Node-4 with TS:108
+27/10/2025 22:35:42 [MainProcess] [Node-7] Received RELEASE from Node-4 with TS:111
+27/10/2025 22:35:42 [MainProcess] [Node-7] Checking: Replies=6/6, At_head=True, Queue=(82,7), (85,5)
+27/10/2025 22:35:42 [MainProcess] [Node-7] ✓✓✓ All conditions met! Entering CS...
+27/10/2025 22:35:42 [MainProcess] 
+27/10/2025 22:35:42 [MainProcess] [Node-7] ========== ENTERING CRITICAL SECTION ==========
+27/10/2025 22:35:42 [MainProcess] [Node-7] Entry Time: 22:35:42.294 | Lamport TS: 113
+27/10/2025 22:35:42 [MainProcess] [Node-5] Checking: Replies=6/6, At_head=False, Queue=(82,7), (85,5)
+27/10/2025 22:35:43 [MainProcess] [Node-7] Working in CS - Start TS: 114
+27/10/2025 22:35:43 [MainProcess] [Node-7]   Operation 1: +700 = 700 [TS:115]
+27/10/2025 22:35:43 [MainProcess] [Node-7]   Operation 2: +710 = 1410 [TS:116]
+27/10/2025 22:35:43 [MainProcess] [Node-7]   Operation 3: +720 = 2130 [TS:117]
+27/10/2025 22:35:43 [MainProcess] [Node-7] Work Complete - Final Result: 2130 [TS:118]
+27/10/2025 22:35:43 [MainProcess] [Node-7] Exit Time: 22:35:43.196 | Lamport TS: 119
+27/10/2025 22:35:43 [MainProcess] [Node-7] ========== EXITING CRITICAL SECTION ==========
+27/10/2025 22:35:43 [MainProcess] 
+27/10/2025 22:35:43 [MainProcess] [Node-7] Sending RELEASE to Node-1
+27/10/2025 22:35:43 [MainProcess] [Node-7] Sending RELEASE to Node-2
+27/10/2025 22:35:43 [MainProcess] [Node-7] Sending RELEASE to Node-3
+27/10/2025 22:35:43 [MainProcess] [Node-2] Received RELEASE from Node-7 with TS:121
+27/10/2025 22:35:43 [MainProcess] [Node-1] Received RELEASE from Node-7 with TS:120
+27/10/2025 22:35:43 [MainProcess] [Node-7] Sending RELEASE to Node-4
+27/10/2025 22:35:43 [MainProcess] [Node-3] Received RELEASE from Node-7 with TS:122
+27/10/2025 22:35:43 [MainProcess] [Node-7] Sending RELEASE to Node-5
+27/10/2025 22:35:43 [MainProcess] [Node-7] Sending RELEASE to Node-6
+27/10/2025 22:35:43 [MainProcess] [Node-7] CS cycle completed
+27/10/2025 22:35:43 [MainProcess] [Node-5] Received RELEASE from Node-7 with TS:125
+27/10/2025 22:35:43 [MainProcess] [Node-4] Received RELEASE from Node-7 with TS:123
+27/10/2025 22:35:43 [MainProcess] [Node-6] Received RELEASE from Node-7 with TS:127
+27/10/2025 22:35:43 [MainProcess] [Node-5] ✓✓✓ All conditions met! Entering CS...
+27/10/2025 22:35:43 [MainProcess] 
+27/10/2025 22:35:43 [MainProcess] [Node-5] ========== ENTERING CRITICAL SECTION ==========
+27/10/2025 22:35:43 [MainProcess] [Node-5] Entry Time: 22:35:43.207 | Lamport TS: 127
+27/10/2025 22:35:44 [MainProcess] [Node-5] Working in CS - Start TS: 128
+27/10/2025 22:35:44 [MainProcess] [Node-5]   Operation 1: +500 = 500 [TS:129]
+27/10/2025 22:35:44 [MainProcess] [Node-5]   Operation 2: +510 = 1010 [TS:130]
+27/10/2025 22:35:44 [MainProcess] [Node-5]   Operation 3: +520 = 1530 [TS:131]
+27/10/2025 22:35:44 [MainProcess] [Node-5] Work Complete - Final Result: 1530 [TS:132]
+27/10/2025 22:35:44 [MainProcess] [Node-5] Exit Time: 22:35:44.113 | Lamport TS: 133
+27/10/2025 22:35:44 [MainProcess] [Node-5] ========== EXITING CRITICAL SECTION ==========
+27/10/2025 22:35:44 [MainProcess] 
+27/10/2025 22:35:44 [MainProcess] [Node-5] Sending RELEASE to Node-1
+27/10/2025 22:35:44 [MainProcess] [Node-5] Sending RELEASE to Node-2
+27/10/2025 22:35:44 [MainProcess] [Node-5] Sending RELEASE to Node-3
+27/10/2025 22:35:44 [MainProcess] [Node-5] Sending RELEASE to Node-4
+27/10/2025 22:35:44 [MainProcess] [Node-5] Sending RELEASE to Node-6
+27/10/2025 22:35:44 [MainProcess] [Node-5] Sending RELEASE to Node-7
+27/10/2025 22:35:44 [MainProcess] [Node-1] Received RELEASE from Node-5 with TS:134
+27/10/2025 22:35:44 [MainProcess] [Node-5] CS cycle completed
+27/10/2025 22:35:44 [MainProcess] [Node-3] Received RELEASE from Node-5 with TS:136
+27/10/2025 22:35:44 [MainProcess] [Node-2] Received RELEASE from Node-5 with TS:135
+27/10/2025 22:35:44 [MainProcess] [Node-4] Received RELEASE from Node-5 with TS:137
+27/10/2025 22:35:44 [MainProcess] [Node-6] Received RELEASE from Node-5 with TS:138
+27/10/2025 22:35:44 [MainProcess] [Node-7] Received RELEASE from Node-5 with TS:139
+27/10/2025 22:36:01 [MainProcess] 
+=== Collecting Statistics ===
+27/10/2025 22:36:01 [MainProcess] Node-1: CS Entries=1, Messages Sent=18, Messages Received=18, Final Clock=135
+27/10/2025 22:36:01 [MainProcess] Node-2: CS Entries=1, Messages Sent=18, Messages Received=18, Final Clock=136
+27/10/2025 22:36:01 [MainProcess] Node-3: CS Entries=1, Messages Sent=18, Messages Received=18, Final Clock=137
+27/10/2025 22:36:01 [MainProcess] Node-4: CS Entries=1, Messages Sent=18, Messages Received=18, Final Clock=138
+27/10/2025 22:36:01 [MainProcess] Node-5: CS Entries=1, Messages Sent=18, Messages Received=18, Final Clock=145
+27/10/2025 22:36:01 [MainProcess] Node-6: CS Entries=1, Messages Sent=18, Messages Received=18, Final Clock=139
+27/10/2025 22:36:01 [MainProcess] Node-7: CS Entries=1, Messages Sent=18, Messages Received=18, Final Clock=140
+27/10/2025 22:36:01 [MainProcess] 
+================================================================================
+27/10/2025 22:36:01 [MainProcess] === LAMPORT'S MUTUAL EXCLUSION FINAL REPORT ===
+27/10/2025 22:36:01 [MainProcess] ================================================================================
+27/10/2025 22:36:01 [MainProcess] 
+--- Individual Node Statistics ---
+27/10/2025 22:36:01 [MainProcess] Node-1:
+27/10/2025 22:36:01 [MainProcess]   CS Entries: 1
+27/10/2025 22:36:01 [MainProcess]   Messages Sent: 18
+27/10/2025 22:36:01 [MainProcess]   Messages Received: 18
+27/10/2025 22:36:01 [MainProcess]   Final Lamport Clock: 135
+27/10/2025 22:36:01 [MainProcess]   CS Entry Time: 22:35:38.329
+27/10/2025 22:36:01 [MainProcess]   CS Exit Time: 22:35:39.231
+27/10/2025 22:36:01 [MainProcess] 
+27/10/2025 22:36:01 [MainProcess] Node-2:
+27/10/2025 22:36:01 [MainProcess]   CS Entries: 1
+27/10/2025 22:36:01 [MainProcess]   Messages Sent: 18
+27/10/2025 22:36:01 [MainProcess]   Messages Received: 18
+27/10/2025 22:36:01 [MainProcess]   Final Lamport Clock: 136
+27/10/2025 22:36:01 [MainProcess]   CS Entry Time: 22:35:40.382
+27/10/2025 22:36:01 [MainProcess]   CS Exit Time: 22:35:41.285
+27/10/2025 22:36:01 [MainProcess] 
+27/10/2025 22:36:01 [MainProcess] Node-3:
+27/10/2025 22:36:01 [MainProcess]   CS Entries: 1
+27/10/2025 22:36:01 [MainProcess]   Messages Sent: 18
+27/10/2025 22:36:01 [MainProcess]   Messages Received: 18
+27/10/2025 22:36:01 [MainProcess]   Final Lamport Clock: 137
+27/10/2025 22:36:01 [MainProcess]   CS Entry Time: 22:35:37.413
+27/10/2025 22:36:01 [MainProcess]   CS Exit Time: 22:35:38.319
+27/10/2025 22:36:01 [MainProcess] 
+27/10/2025 22:36:01 [MainProcess] Node-4:
+27/10/2025 22:36:01 [MainProcess]   CS Entries: 1
+27/10/2025 22:36:01 [MainProcess]   Messages Sent: 18
+27/10/2025 22:36:01 [MainProcess]   Messages Received: 18
+27/10/2025 22:36:01 [MainProcess]   Final Lamport Clock: 138
+27/10/2025 22:36:01 [MainProcess]   CS Entry Time: 22:35:41.294
+27/10/2025 22:36:01 [MainProcess]   CS Exit Time: 22:35:42.202
+27/10/2025 22:36:01 [MainProcess] 
+27/10/2025 22:36:01 [MainProcess] Node-5:
+27/10/2025 22:36:01 [MainProcess]   CS Entries: 1
+27/10/2025 22:36:01 [MainProcess]   Messages Sent: 18
+27/10/2025 22:36:01 [MainProcess]   Messages Received: 18
+27/10/2025 22:36:01 [MainProcess]   Final Lamport Clock: 145
+27/10/2025 22:36:01 [MainProcess]   CS Entry Time: 22:35:43.207
+27/10/2025 22:36:01 [MainProcess]   CS Exit Time: 22:35:44.113
+27/10/2025 22:36:01 [MainProcess] 
+27/10/2025 22:36:01 [MainProcess] Node-6:
+27/10/2025 22:36:01 [MainProcess]   CS Entries: 1
+27/10/2025 22:36:01 [MainProcess]   Messages Sent: 18
+27/10/2025 22:36:01 [MainProcess]   Messages Received: 18
+27/10/2025 22:36:01 [MainProcess]   Final Lamport Clock: 139
+27/10/2025 22:36:01 [MainProcess]   CS Entry Time: 22:35:39.317
+27/10/2025 22:36:01 [MainProcess]   CS Exit Time: 22:35:40.286
+27/10/2025 22:36:01 [MainProcess] 
+27/10/2025 22:36:01 [MainProcess] Node-7:
+27/10/2025 22:36:01 [MainProcess]   CS Entries: 1
+27/10/2025 22:36:01 [MainProcess]   Messages Sent: 18
+27/10/2025 22:36:01 [MainProcess]   Messages Received: 18
+27/10/2025 22:36:01 [MainProcess]   Final Lamport Clock: 140
+27/10/2025 22:36:01 [MainProcess]   CS Entry Time: 22:35:42.294
+27/10/2025 22:36:01 [MainProcess]   CS Exit Time: 22:35:43.196
+27/10/2025 22:36:01 [MainProcess] 
+27/10/2025 22:36:01 [MainProcess] --- Aggregate Statistics ---
+27/10/2025 22:36:01 [MainProcess] Total Nodes: 7
+27/10/2025 22:36:01 [MainProcess] Total CS Entries: 7
+27/10/2025 22:36:01 [MainProcess] Total Messages Sent: 126
+27/10/2025 22:36:01 [MainProcess] Total Messages Received: 126
+27/10/2025 22:36:01 [MainProcess] Average Messages per Node: 18.00
+27/10/2025 22:36:01 [MainProcess] 
+--- Mutual Exclusion Verification ---
+27/10/2025 22:36:01 [MainProcess] Node-1: 22:35:38.329 - 22:35:39.231
+27/10/2025 22:36:01 [MainProcess] Node-2: 22:35:40.382 - 22:35:41.285
+27/10/2025 22:36:01 [MainProcess] Node-1: 22:35:38.329 - 22:35:39.231
+27/10/2025 22:36:01 [MainProcess] Node-3: 22:35:37.413 - 22:35:38.319
+27/10/2025 22:36:01 [MainProcess] Node-1: 22:35:38.329 - 22:35:39.231
+27/10/2025 22:36:01 [MainProcess] Node-4: 22:35:41.294 - 22:35:42.202
+27/10/2025 22:36:01 [MainProcess] Node-1: 22:35:38.329 - 22:35:39.231
+27/10/2025 22:36:01 [MainProcess] Node-5: 22:35:43.207 - 22:35:44.113
+27/10/2025 22:36:01 [MainProcess] Node-1: 22:35:38.329 - 22:35:39.231
+27/10/2025 22:36:01 [MainProcess] Node-6: 22:35:39.317 - 22:35:40.286
+27/10/2025 22:36:01 [MainProcess] Node-1: 22:35:38.329 - 22:35:39.231
+27/10/2025 22:36:01 [MainProcess] Node-7: 22:35:42.294 - 22:35:43.196
+27/10/2025 22:36:01 [MainProcess] Node-2: 22:35:40.382 - 22:35:41.285
+27/10/2025 22:36:01 [MainProcess] Node-3: 22:35:37.413 - 22:35:38.319
+27/10/2025 22:36:01 [MainProcess] Node-2: 22:35:40.382 - 22:35:41.285
+27/10/2025 22:36:01 [MainProcess] Node-4: 22:35:41.294 - 22:35:42.202
+27/10/2025 22:36:01 [MainProcess] Node-2: 22:35:40.382 - 22:35:41.285
+27/10/2025 22:36:01 [MainProcess] Node-5: 22:35:43.207 - 22:35:44.113
+27/10/2025 22:36:01 [MainProcess] Node-2: 22:35:40.382 - 22:35:41.285
+27/10/2025 22:36:01 [MainProcess] Node-6: 22:35:39.317 - 22:35:40.286
+27/10/2025 22:36:01 [MainProcess] Node-2: 22:35:40.382 - 22:35:41.285
+27/10/2025 22:36:01 [MainProcess] Node-7: 22:35:42.294 - 22:35:43.196
+27/10/2025 22:36:01 [MainProcess] Node-3: 22:35:37.413 - 22:35:38.319
+27/10/2025 22:36:01 [MainProcess] Node-4: 22:35:41.294 - 22:35:42.202
+27/10/2025 22:36:01 [MainProcess] Node-3: 22:35:37.413 - 22:35:38.319
+27/10/2025 22:36:01 [MainProcess] Node-5: 22:35:43.207 - 22:35:44.113
+27/10/2025 22:36:01 [MainProcess] Node-3: 22:35:37.413 - 22:35:38.319
+27/10/2025 22:36:01 [MainProcess] Node-6: 22:35:39.317 - 22:35:40.286
+27/10/2025 22:36:01 [MainProcess] Node-3: 22:35:37.413 - 22:35:38.319
+27/10/2025 22:36:01 [MainProcess] Node-7: 22:35:42.294 - 22:35:43.196
+27/10/2025 22:36:01 [MainProcess] Node-4: 22:35:41.294 - 22:35:42.202
+27/10/2025 22:36:01 [MainProcess] Node-5: 22:35:43.207 - 22:35:44.113
+27/10/2025 22:36:01 [MainProcess] Node-4: 22:35:41.294 - 22:35:42.202
+27/10/2025 22:36:01 [MainProcess] Node-6: 22:35:39.317 - 22:35:40.286
+27/10/2025 22:36:01 [MainProcess] Node-4: 22:35:41.294 - 22:35:42.202
+27/10/2025 22:36:01 [MainProcess] Node-7: 22:35:42.294 - 22:35:43.196
+27/10/2025 22:36:01 [MainProcess] Node-5: 22:35:43.207 - 22:35:44.113
+27/10/2025 22:36:01 [MainProcess] Node-6: 22:35:39.317 - 22:35:40.286
+27/10/2025 22:36:01 [MainProcess] Node-5: 22:35:43.207 - 22:35:44.113
+27/10/2025 22:36:01 [MainProcess] Node-7: 22:35:42.294 - 22:35:43.196
+27/10/2025 22:36:01 [MainProcess] Node-6: 22:35:39.317 - 22:35:40.286
+27/10/2025 22:36:01 [MainProcess] Node-7: 22:35:42.294 - 22:35:43.196
+27/10/2025 22:36:01 [MainProcess] ✓ MUTUAL EXCLUSION VERIFIED: No overlapping CS executions detected
+27/10/2025 22:36:01 [MainProcess] 
+--- Message Count Verification ---
+27/10/2025 22:36:01 [MainProcess] Expected messages per CS entry: 12
+27/10/2025 22:36:01 [MainProcess] Expected total messages: 84
+27/10/2025 22:36:01 [MainProcess] Actual total messages sent: 126
+27/10/2025 22:36:01 [MainProcess] ✓ MESSAGE COUNT VERIFIED
+27/10/2025 22:36:01 [MainProcess] 
+====================
+27/10/2025 22:36:01 [MainProcess] === SIMULATION COMPLETE ===
+27/10/2025 22:36:01 [MainProcess] ====================
+
+27/10/2025 22:36:01 [MainProcess] 
+=== Shutting down all nodes ===
+27/10/2025 22:36:01 [MainProcess] [Node-1] Shutting down...
+27/10/2025 22:36:01 [MainProcess] Shutdown signal sent to Node-1
+27/10/2025 22:36:01 [MainProcess] [Node-2] Shutting down...
+27/10/2025 22:36:01 [MainProcess] Shutdown signal sent to Node-2
+27/10/2025 22:36:01 [MainProcess] [Node-3] Shutting down...
+27/10/2025 22:36:01 [MainProcess] Shutdown signal sent to Node-3
+27/10/2025 22:36:01 [MainProcess] [Node-4] Shutting down...
+27/10/2025 22:36:01 [MainProcess] Shutdown signal sent to Node-4
+27/10/2025 22:36:01 [MainProcess] [Node-5] Shutting down...
+27/10/2025 22:36:01 [MainProcess] Shutdown signal sent to Node-5
+27/10/2025 22:36:01 [MainProcess] [Node-6] Shutting down...
+27/10/2025 22:36:01 [MainProcess] Shutdown signal sent to Node-6
+27/10/2025 22:36:01 [MainProcess] [Node-7] Shutting down...
+27/10/2025 22:36:01 [MainProcess] Shutdown signal sent to Node-7
+27/10/2025 22:36:01 [MainProcess] [Node-1] Server stopped
+27/10/2025 22:36:01 [MainProcess] [Node-2] Server stopped
+27/10/2025 22:36:01 [MainProcess] [Node-3] Server stopped
+27/10/2025 22:36:01 [MainProcess] [Node-4] Server stopped
+27/10/2025 22:36:01 [MainProcess] [Node-5] Server stopped
+27/10/2025 22:36:01 [MainProcess] [Node-6] Server stopped
+27/10/2025 22:36:01 [MainProcess] [Node-7] Server stopped
+27/10/2025 22:36:02 [MainProcess] Coordinator finished
