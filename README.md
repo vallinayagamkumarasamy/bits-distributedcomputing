@@ -1,4 +1,4 @@
-# Distributed Systems Assignments
+# Distributed Computing Assignments
 
 This repository contains Lamport Distributed mutual exclusion using RPC and Byzantine Agreement protocol using RPC script.s
 
